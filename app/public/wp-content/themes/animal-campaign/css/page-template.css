@@ -1,0 +1,43 @@
+.page-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.page-template-bg {
+    width: 65%;
+    height: 100%;
+    border-radius: 10px;
+    background: #FFDB9D;
+    display: none;
+}
+
+.page-content {
+    margin-top: 100px;
+}
+
+@media only screen and (min-width: 800px) {
+    .page-template {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px 0;
+        gap: 40px;
+    }
+
+    .page-description {
+        text-align: left;
+    }
+
+    .page-template-bg {
+        position: absolute;
+        left: -290px;
+        top: 55px;
+        z-index: -1;
+        display: block;
+    }
+
+    .page.decore {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,17 @@
+.logos-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 61px;
+    margin: 50px 0;
+}
+
+.logo-partner-img {
+    cursor: pointer;
+}
+
+.front-page-logos {
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,32 @@
+.question {
+    max-width: 790px;
+    margin: 30px auto;
+    box-shadow: -2px -2px 10px 0px #00000033;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(79, 103, 67, 0.3);
+    color: #4F6743;
+}
+
+.wp-block-details summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wp-block-details summary::marker {
+    content: none;
+}
+
+.wp-block-details summary::after {
+    content: " +";
+    float: right;
+    text-align: right;
+}
+
+.wp-block-details[open] summary::after {
+    content: " -";
+}
+
+.wp-block-details[open] {
+    background-color: #fff;
+}

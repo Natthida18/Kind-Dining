@@ -1,0 +1,46 @@
+.famous-person-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 70px 0;
+}
+
+.attachment-logo-small {
+    border-radius: 50%;
+}
+
+.headline-medium.famous-person-th-name {
+    font-size: 1.875rem;
+}
+
+.famous-person-th-name {
+    color: #4F6743;
+    margin-top: 20px;
+}
+
+.famous-person-en-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFB400;
+}
+
+.bg-famous-person {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width: 1160px) {
+    .famous-person-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px 0;
+    }
+
+    .famous-person-img {
+        width: 150px;
+    }
+}

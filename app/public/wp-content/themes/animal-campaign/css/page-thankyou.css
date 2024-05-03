@@ -1,0 +1,25 @@
+.team-crest {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFB400;
+}
+
+.thankyou-team-img {
+    width: min(100%, 570px);
+    height: 100%;
+    margin: 50px 0;
+}
+
+.invite-join-team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,57 @@
+.site-head {
+    position: relative;
+    padding: 20px;
+}
+
+/* Small menu. */
+.menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 2.5rem;
+    color: #28341C;
+}
+
+.main-menu {
+    display: none;
+    list-style: none;
+}
+
+.main-menu>li {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.main-menu>li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-menu>li.current-menu-item>a {
+    font-weight: 700;
+    color: #FFB400;
+    border-bottom: 3px solid #FFB400;
+}
+
+@media only screen and (min-width: 980px) {  
+    .site-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+		display: none;
+	}
+
+    .main-menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+}

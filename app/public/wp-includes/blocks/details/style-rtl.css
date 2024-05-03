@@ -1,0 +1,16 @@
+.wp-block-details{
+  box-sizing:border-box;
+  overflow:hidden;
+}
+
+.wp-block-details summary{
+  cursor:pointer;
+}
+
+.wp-block-details summary::marker {
+	content: "+ ";
+}
+
+.wp-block-details[open] summary::marker {
+	content: "- "
+}

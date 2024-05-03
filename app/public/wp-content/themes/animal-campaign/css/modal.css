@@ -1,0 +1,76 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+}
+
+.partner {
+    margin-top: 40px;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.close-modal {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    font-size: 2.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+.modal-title-th {
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #4F6743;
+}
+
+.modal-title-en {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #FFA800;
+}
+
+.modal-description {
+    text-align: left;
+}
+
+.modal-description a {
+    color: #FFB400;
+}
+
+.youtube-content,
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.youtube-content iframe,
+.video-content iframe {
+    width: 800px;
+    height: 445px;
+}
+
+@media only screen and (min-width: 700px) {
+    .partner {
+        margin-top: 140px;
+    }
+}

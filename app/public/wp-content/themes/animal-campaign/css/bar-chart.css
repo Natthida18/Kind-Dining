@@ -1,0 +1,57 @@
+.bar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-chart {
+    width: min(100%, 150px);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.bar {
+    width: 75px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.2);
+}
+
+.bar-img {
+    width: 100%;
+}
+
+.bar-th-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #4F6743;
+}
+
+.bar-en-title {
+    font-size: 1.125rem;
+    color: #FFB400;
+}
+
+@media only screen and (min-width: 900px) {
+    .bar {
+        width: 100%;
+    }
+
+    .bar-th-title {
+        font-size: 1.875rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: #4F6743;
+    }
+    
+    .bar-en-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: #FFB400;
+    }
+    
+}
