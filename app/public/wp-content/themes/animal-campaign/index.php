@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-<div style="background-image: url(<?php echo esc_url( get_theme_file_uri( '/images/bg.png' ) ); ?>);">
+<div class="page-background-img" style="background-image: url(<?php echo esc_url( get_theme_file_uri( '/images/bg.png' ) ); ?>);">
 	<div class="container">
 		<h1 class="headline-large center"><?php the_title(); ?></h1>
 		<hr class="decore">

@@ -16,19 +16,18 @@ body {
     text-align: left;
 }
 
-.margin {
-    margin-bottom: 50px;
-}
-
 .container {
     width: min(100%, 1200px);
-    margin: 0 auto;
-    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .container-medium {
     width: min(100%, 670px);
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .headline-large {

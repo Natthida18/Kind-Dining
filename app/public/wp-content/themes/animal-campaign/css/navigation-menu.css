@@ -17,7 +17,7 @@
     list-style: none;
 }
 
-.main-menu>li {
+.main-menu li {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 32px;
@@ -26,18 +26,37 @@
     padding: 10px 0;
 }
 
-.main-menu>li>a {
+.main-menu li a {
     text-decoration: none;
     color: #000;
 }
 
-.main-menu>li.current-menu-item>a {
+.main-menu .current-menu-item a {
     font-weight: 700;
     color: #FFB400;
-    border-bottom: 3px solid #FFB400;
 }
 
-@media only screen and (min-width: 980px) {  
+.main-menu a:after {
+    content: "";
+    height: 3px;
+    width: 35px;
+    background: transparent;
+    display: block;
+}
+
+.main-menu a:hover:after {
+    width: 35px;
+    background: #FFB400;
+    transition: all 0.5s ease;
+}
+
+
+.main-menu .current-menu-item a::after {
+    width: 35px;
+    background: #FFB400;
+}
+
+@media only screen and (min-width: 1050px) {  
     .site-head {
         display: flex;
         justify-content: space-between;

@@ -34,7 +34,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<a href="javascript:void(0);" class="menu-toggle" onclick="myFunction()">
+			<a class="menu-toggle" onclick="menuToggle()">
 				<i class="fa-solid fa-bars"></i>			
 			</a>
 			<?php
@@ -48,13 +48,3 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-<script>
-function myFunction() {
-	var x = document.getElementById("navigation-menu");
-	if (x.style.display === "block") {
-	x.style.display = "none";
-	} else {
-	x.style.display = "block";
-	}
-}
-</script>

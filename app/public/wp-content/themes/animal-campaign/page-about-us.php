@@ -47,6 +47,5 @@ get_template_part( 'template-parts/content', 'page' );
 	wp_reset_postdata();
 	?>
 </div>
-
 <?php
 get_footer();

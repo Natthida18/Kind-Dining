@@ -1,11 +1,10 @@
 <?php get_header(); ?>
-
-<div style="background-image: url(<?php echo esc_url( get_theme_file_uri( '/images/bg.png' ) ); ?>);">
+<div class="page-background-img" style="background-image: url(<?php echo esc_url( get_theme_file_uri( '/images/bg.png' ) ); ?>);">
 	<div class="famous-persons container center">
 		<h1 class="headline-large"><?php the_title(); ?></h1>
 		<hr class="decore">
-		<div class="famous-person-wrapper">
 
+		<div class="famous-person-wrapper">
 		<?php
 		if ( have_rows( 'famous_persons' ) ) {
 			while ( have_rows( 'famous_persons' ) ) {
@@ -27,7 +26,8 @@
 		}
 		?>
 		</div>
+
 	</div>
 </div>
-
-<?php get_footer(); ?>
+<?php
+get_footer();
