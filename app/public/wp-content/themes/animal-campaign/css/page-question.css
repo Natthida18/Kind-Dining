@@ -5,7 +5,7 @@
     border-radius: 10px;
     padding: 30px;
     background-color: rgba(79, 103, 67, 0.3);
-    color: #4F6743;
+    color: var(--light-green-color);
 }
 
 .wp-block-details summary {
@@ -28,5 +28,5 @@
 }
 
 .wp-block-details[open] {
-    background-color: #fff;
+    background-color: var(--white-color);
 }

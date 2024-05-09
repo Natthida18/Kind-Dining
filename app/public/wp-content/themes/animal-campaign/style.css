@@ -3,3 +3,13 @@
     Author: Natthida Baiyok
     Version: 1.0
 */
+
+:root {
+    --yellow-color: #FFA400;
+    --yellow-color2: #FFA800;
+    --light-yellow-color: #FFDB9D;
+    --light-green-color: #4F6743;
+    --green-color: #28341C;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}

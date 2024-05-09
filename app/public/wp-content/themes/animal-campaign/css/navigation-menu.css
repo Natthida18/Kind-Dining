@@ -3,13 +3,12 @@
     padding: 20px;
 }
 
-/* Small menu. */
 .menu-toggle {
     position: absolute;
     right: 20px;
     top: 12px;
     font-size: 2.5rem;
-    color: #28341C;
+    color: var(--green-color);
 }
 
 .main-menu {
@@ -20,20 +19,18 @@
 .main-menu li {
     font-size: 1.25rem;
     font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0.02em;
     text-align: left;
     padding: 10px 0;
 }
 
 .main-menu li a {
     text-decoration: none;
-    color: #000;
+    color: var(--black-color);
 }
 
 .main-menu .current-menu-item a {
     font-weight: 700;
-    color: #FFB400;
+    color: var(--yellow-color);
 }
 
 .main-menu a:after {
@@ -46,17 +43,17 @@
 
 .main-menu a:hover:after {
     width: 35px;
-    background: #FFB400;
+    background: var(--yellow-color);
     transition: all 0.5s ease;
 }
 
 
 .main-menu .current-menu-item a::after {
     width: 35px;
-    background: #FFB400;
+    background: var(--yellow-color);
 }
 
-@media only screen and (min-width: 1050px) {  
+@media only screen and (min-width: 1050px) {
     .site-head {
         display: flex;
         justify-content: space-between;
@@ -64,8 +61,8 @@
     }
 
     .menu-toggle {
-		display: none;
-	}
+        display: none;
+    }
 
     .main-menu {
         display: flex;

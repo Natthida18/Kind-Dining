@@ -13,9 +13,11 @@
 				<div class="famous-person">
 					<?php
 					if ( ! empty( get_sub_field( 'image' ) ) ) {
-						echo '<div class="bg-famous-person" style="background-image: url(' . esc_url( get_template_directory_uri() ) . '/images/bg-famous.png);">';
-						echo wp_get_attachment_image( get_sub_field( 'image' ), 'logo-small' );
-						echo '</div>';
+						?>
+					<div class="bg-famous-person" style="background-image: url(<?php echo esc_url( get_theme_file_uri( '/images/bg-famous1.png' ) ); ?>)">
+						<?php echo wp_get_attachment_image( get_sub_field( 'image' ), 'logo-small' ); ?>
+					</div>
+						<?php
 					}
 					?>
 					<p class="headline-medium famous-person-th-name"><?php the_sub_field( 'thai_name' ); ?></p>

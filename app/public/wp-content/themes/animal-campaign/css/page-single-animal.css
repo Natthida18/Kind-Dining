@@ -20,16 +20,17 @@
 .total-team {
     font-family: Prompt;
     font-size: 1.875rem;
-    color: #4F6743;
+    color: var(--light-green-color);
 }
 
 .btn {
-    color: #FFA800;
-    border: 3px solid #FFA800;
+    color: var(--yellow-color2);
+    border: 3px solid var(--yellow-color2);
     border-radius: 25%;
     padding: 10px;
     width: 200px;
     height: 50px;
     background-color: transparent;
-    margin: 50px 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }

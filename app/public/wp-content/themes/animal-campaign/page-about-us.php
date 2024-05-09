@@ -10,7 +10,7 @@ get_template_part( 'template-parts/content', 'page' );
 			<img id="modalImage" class="modal-img" src="">
 			<p id="modalTitleTH" class="modal-title-th">Title go here</p>
 			<p id="modalTitleEN" class="modal-title-en">Title go here</p>
-			<div id="modalContent" class="headline-small modal-description">Description go here</div>
+			<div id="modalContent" class="headline-small modal-description left">Description go here</div>
 		</div>
 	</div>
 

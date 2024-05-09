@@ -14,28 +14,31 @@
 	echo '<hr class ="decore">';
 	if ( ! isset( $invite_content ) || empty( $invite_content ) ) {
 		?>
-		<p class="headline-small">ชวนคนไทยให้คำมั่นสัญญาไม่กินเนื้อสัตว์ป่าผิดกฏหมาย เพื่อต่อต้านการค้าสัตว์ป่าผิดกฎหมาย รวมทั้งลดความเสี่ยงของโรคระบาดที่อาจเกิดจากสัตว์ป่า</p>
+		<p class="container-medium headline-small">ชวนคนไทยให้คำมั่นสัญญาไม่กินเนื้อสัตว์ป่าผิดกฏหมาย เพื่อต่อต้านการค้าสัตว์ป่าผิดกฎหมาย รวมทั้งลดความเสี่ยงของโรคระบาดที่อาจเกิดจากสัตว์ป่า</p>
 		<?php
 	} else {
 		?>
-		<p class="headline-small"><?php echo esc_html( $invite_content ); ?></p>
+		<p class="container-medium headline-small"><?php echo esc_html( $invite_content ); ?></p>
 		<?php
 	}
 	?>
 	<div class="bg-section"></div>
+
 	<?php
-	$video = new WP_Query(
+	$videoes = new WP_Query(
 		array(
 			'post_type'      => 'video',
 			'posts_per_page' => 3,
 		)
 	);
-	?>
-	<div class="video-invite">
-	<?php
-	while ( $video->have_posts() ) {
-		$video->the_post();
+
+	if ( $videoes->have_posts() ) {
 		?>
+	<div class="video-invite">
+		<?php
+		while ( $videoes->have_posts() ) {
+			$videoes->the_post();
+			?>
 		<div class="video-item">
 			<div class="video-invite-background" onclick="openModalVideo()">
 				<?php the_post_thumbnail( 'wildlife-team', array( 'class' => 'wildlife-team-img' ) ); ?>
@@ -48,8 +51,9 @@
 			</div>
 			<p class="video-invite-title"><?php the_title(); ?></p>
 		</div>
-		<?php
-	}
-	?>
+			<?php
+		}
+		?>
 	</div>
+<?php } ?>
 </section>

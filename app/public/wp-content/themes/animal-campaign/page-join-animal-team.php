@@ -46,18 +46,29 @@ get_template_part( 'template-parts/content', 'page' );
 		$colors[]            = get_field( 'bar_color' );
 		$bar_imgs[]          = get_field( 'bar_image' );
 	}
-
-	$max_value = max( $join_counts );
 	?>
 
 	<div class="bar-chart">
 		<?php
+		$max_value = max( $join_counts );
 		foreach ( $join_counts as $index => $value ) {
 			$bar_height = ( $value / $max_value ) * 100;
 			?>
 				<div class="bar-col">
 					<div class="bar-item">
-						<p class="headline-medium"><?php echo esc_html( $value ); ?></p>
+						<p class="headline-medium">
+						<?php
+						if ( $value >= 1000 ) {
+							$value_format = number_format( floor( $value / 100 ) / 10, 1 ) . ' k';
+						} elseif ( $value >= 1000000 ) {
+							$value_format = number_format( floor( $value / 100000 ) / 10, 1 ) . ' m';
+						} else {
+							$value_format = number_format( $value );
+						}
+
+						echo esc_html( $value_format );
+						?>
+						</p>
 						<img class="bar-img" src="<?php echo esc_url( $bar_imgs[ $index ] ); ?>">
 						<?php
 						if ( $join_counts === $max_value ) {
@@ -81,3 +92,4 @@ get_template_part( 'template-parts/content', 'page' );
 </div>
 <?php
 get_footer();
+?>

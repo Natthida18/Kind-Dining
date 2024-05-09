@@ -10,17 +10,18 @@
 
 .tagline {
     font-size: 2.5rem;
+    line-height: 1.2;
     font-weight: 600;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .bold {
-    color: #FFA800;
+    color: var(--yellow-color2);
 }
 
 .bg-section {
     height: 200px;
-    background-color: #FFDB9D;
+    background-color: var(--light-yellow-color);
     border-radius: 10px;
     margin: 40px auto;
 }
@@ -33,7 +34,9 @@
     margin-top: -185px;
 }
 
-.video-invite-section, .wildlife-team-section, .partner-logo-section {
+.video-invite-section, 
+.wildlife-team-section, 
+.partner-logo-section {
     padding: 70px 20px;
 }
 
@@ -45,14 +48,14 @@
 .video-invite-title {
     font-size: 1.875rem;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 1.3;
     letter-spacing: 0.02em;
-    color: #4F6743;
+    color: var(--light-green-color);
     margin: 20px 0;
 }
 
 .hashtag-campaign {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .overlay {
@@ -71,6 +74,7 @@
 
 .hashtag-title {
     font-size: 1.875rem;
+    line-height: 1.3;
     font-weight: 600;
 }
 
@@ -95,7 +99,7 @@
 .video-focus-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--white-color);
     margin-top: 50px;
 }
 
@@ -106,12 +110,13 @@
 
     .tagline {
         font-size: 4rem;
-        line-height: 83px;
+        line-height: 1.3;
         letter-spacing: 0.02em;
     }
 
     .video {
-        margin: -140px 0 50px 0;
+        margin-top: -140px;
+        margin-bottom: 50px;
     }
 
     .hashtag-campaign {
@@ -121,22 +126,21 @@
     .hashtag-title {
         font-size: 2.25rem;
         font-weight: 600;
-        line-height: 57.6px;
+        line-height: 1.2;
         letter-spacing: 0.02em;
     }
 
     .hashtag {
         font-size: 2.25rem;
         font-weight: 400;
-        line-height: 44.46px;
+        line-height: 1.2;
         letter-spacing: 0.02em;
     }
 
     .video-focus-title {
         font-size: 4rem;
-        line-height: 102.4px;
         letter-spacing: 0.02em;
-        color: #fff;
+        color: var(--white-color);
         margin-top: 50px;
     }
 }

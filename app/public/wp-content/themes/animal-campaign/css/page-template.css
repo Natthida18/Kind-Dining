@@ -17,7 +17,7 @@
     width: 65%;
     height: 100%;
     border-radius: 10px;
-    background: #FFDB9D;
+    background: var(--light-yellow-color);
     display: none;
 }
 
@@ -30,7 +30,7 @@
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 50px 0;
+        margin-top: 50px;
         gap: 40px;
     }
 

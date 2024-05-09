@@ -31,19 +31,20 @@
 
 .line {
     height: 3px;
-    background: #28341C;
+    background: var(--green-color);
     margin: 20px 0;
 }
 
 .bar-th-title {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
-    color: #4F6743;
+    color: var(--light-green-color);
 }
 
 .bar-en-title {
     font-size: 1rem;
-    color: #FFB400;
+    font-weight: 600;
+    color: var(--yellow-color);
 }
 
 @media only screen and (min-width: 460px) {
@@ -81,16 +82,12 @@
 
     .bar-th-title {
         font-size: 1.875rem;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-        color: #4F6743;
+        color: var(--light-green-color);
     }
     
     .bar-en-title {
         font-size: 1.25rem;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-        color: #FFB400;
+        color: var(--yellow-color);
     }
 }
 

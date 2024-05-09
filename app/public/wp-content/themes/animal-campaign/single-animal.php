@@ -5,17 +5,16 @@ while ( have_posts() ) {
 	the_post(); ?>
 	<div class="page-background-img" style="background-image: url(<?php echo esc_url( get_theme_file_uri( '/images/bg.png' ) ); ?>);">
 		<div class="single-thumbnail" onclick="openModal()">
-		<?php
-
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail(
-				'',
-				array(
-					'class' => 'single-thumbnail-img',
-				)
-			);
-		}
-		?>
+			<?php
+			if ( has_post_thumbnail() ) {
+				the_post_thumbnail(
+					'',
+					array(
+						'class' => 'single-thumbnail-img',
+					)
+				);
+			}
+			?>
 			<img class="play-button" src="<?php echo esc_url( get_theme_file_uri( '/images/play.png' ) ); ?>">
 		</div>
 		<div id="modalYoutube" class="modal">
@@ -33,31 +32,4 @@ while ( have_posts() ) {
 	</div>
 	<?php
 }
-
 get_footer();
-?>
-
-<script>
-jQuery(document).ready(function($) {
-	$('#clickButton').click(function() {
-		var animalID = $(this).data('animal');
-		
-		$.ajax({
-			beforeSend: (xhr) => {
-				xhr.setRequestHeader('X-WP-Nonce', kindDining.nonce);
-			},
-			url: kindDining.root_url + '/wp-json/animal/v1/joinTeam?animal=' + animalID,
-			type: 'GET',
-			success: function(response) {
-				window.location.href = response.redirect_url;
-				console.log(response.message);
-				console.log('Data sent successfully!');
-			},
-			error: function(error) {
-				console.error('Error:', error);
-			}
-		});
-
-	});
-});
-</script>

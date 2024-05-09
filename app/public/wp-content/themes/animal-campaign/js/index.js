@@ -22,7 +22,6 @@ function logoClick(postId, imageUrl, titleTH, titleEN, content) {
     document.querySelector("#modalLogo").style.display = "block"; // Show the modal
 }
 
-//close modal partner logo click
 function closeModal() {
     document.querySelector("#modalLogo").style.display = "none"; // Hide the modal
 }
